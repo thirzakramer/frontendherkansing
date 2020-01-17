@@ -1,0 +1,79 @@
+/**************/
+/*MAIN CONTACT*/
+/**************/
+
+
+body > section {
+    background-color: darkolivegreen;
+    margin: 0.5em;
+    padding: 0.5em;
+    color: white;
+}
+
+.show {  /*formulier*/
+    display: block;
+}
+
+.hide { /*bedankt*/
+    display: none;
+}
+
+form > fieldset > h1 {
+    text-align: center;
+}
+
+form > fieldset > legend {
+    text-align: center;
+}
+
+form > fieldset > input{
+    width: 100%;
+    height: 2em;
+}
+
+section > button {
+    color: white;
+    background-color: darkolivegreen;
+    border-style: solid;
+    border-color: white;
+    margin: 1em; padding: 1em 2em;
+    font-size: 1em;
+    border-radius: 1em;
+}
+
+body > div {
+    background-color: darkolivegreen;
+    color: white;
+    margin: 0.5em;
+    padding: 0.5em;
+}
+
+body > div > a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: chocolate;
+}
+
+a:active {
+
+}
+
+/***************/
+/*MEDIA QUERIES*/
+/***************/
+@media (min-width:30em) {
+    form > fieldset > legend {
+    text-align: left;
+}
+}
+
+/**************/
+/*USED SOURCES*/
+/**************/
+/*
+https://stackoverflow.com/questions/2789703/remove-stubborn-underline-from-link
+https://www.w3schools.com/css/css_form.asp
+*/

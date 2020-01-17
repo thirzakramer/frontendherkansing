@@ -1,0 +1,81 @@
+/*******************/
+/*MAIN WAT DOEN WIJ*/
+/*******************/
+main {
+    padding: 2em;
+    display: grid;
+    grid-gap: 2em;
+}
+
+main > section {
+    display: grid;
+    grid-gap: 2em;
+    
+}
+
+main > section section {
+    padding:2em;
+}
+
+h2 {
+    color: #d15900;
+    text-align: center;
+}
+
+.subtitel {
+    color: #d15900;
+    text-align: center;
+}
+
+/***************/
+/*CURSUSAAANBOD*/
+/***************/
+main > section.cursusaanbod section{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #d15900;
+    border-radius: 50% 50% 1em 1em / 20% 20% 1em 1em;
+}
+
+/**********/
+/*DIENSTEN*/
+/**********/
+main > section.diensten section {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #d15900;
+    border-radius: 50% 50% 1em 1em / 20% 20% 1em 1em;
+    /*credits to sanne: zijkanten ipv hoeken*/
+}
+
+/***************/
+/*MEDIA QUERIES*/
+/***************/
+@media (min-width:48em) {
+    main > section.cursusaanbod{
+        grid-template-columns: 1fr 1fr 1fr;
+        padding:2em 0;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #d15900;
+        border-radius: 30% 30% 1em 1em / 20% 20% 1em 1em;
+    }
+    
+    main > section.cursusaanbod section{
+        padding:0 0 0 2em;
+        border:none;
+    }
+    
+     main > section.cursusaanbod section:last-of-type{
+        padding:0 2em;
+    }
+    
+    main > section.cursusaanbod section + section{
+        border-left:solid 1px #d15900;
+        border-radius:0;
+    }
+    
+    main > section.diensten {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

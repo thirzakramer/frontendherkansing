@@ -1,0 +1,112 @@
+/***********/
+/*MAIN HOME*/
+/***********/
+main > section > p{
+    color: white;
+}
+
+/***************************/
+/*SERVICE VOOR UW LIEVELING*/
+/***************************/
+main > section:first-of-type {
+    position: relative;
+}
+
+body > main > section > div > h1 {
+    margin: 0;
+}
+
+body > main > section > div > ul > li {
+    list-style: none;
+    margin: 1em;
+    font-size: 0.65em;
+}
+
+main > section:first-of-type > img {
+    width: 100%;
+    display: block;
+}
+
+main > section:first-of-type > div {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.75));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.icon {
+    width: 2em;
+    height: 2em;
+}
+
+/***********************/
+/*INLEIDING ORANJE VLAK*/
+/***********************/
+main > section:nth-of-type(2) {
+    background-color: #d15900;
+    padding: 1em;
+    display: grid;
+}
+
+main > section:nth-of-type(2) p {
+    margin: 0;
+    max-width: 32em;
+    justify-self: center;
+    font-size: .85em
+}
+
+main > section > a {
+    color: white;
+    border-style: solid;
+    border-color: white;
+    margin: 1em; padding: 1em 2em;
+    display: inline-block;
+    font-size: 1em;
+    border-radius: 1em;
+    justify-self: center;
+}
+
+/***************/
+/*MEDIA QUERIES*/
+/***************/
+@media (min-width:29em) {
+    body > main > section > div > h1 {
+        font-size: 1.5em;
+    }
+    body > main > section > div > ul > li {
+        list-style: none;
+        margin: 1em;
+        font-size: 1em;
+    }
+    main > section:nth-of-type(2) p {
+        font-size: 1em;
+    }
+}
+
+@media (min-width:34em) {
+    main > section:nth-of-type(2) p {
+        padding: 1.5em;
+    }
+    
+}
+
+@media (min-width:65em) {
+    body > main > section > div > h1 {
+        font-size: 2em;
+    }
+    body > main > section > div > ul > li {
+        list-style: none;
+        margin: 1em;
+        font-size: 1.5em;
+    }
+    main > section:nth-of-type(2) p {
+        font-size: 1.25em;
+    }
+}

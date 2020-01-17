@@ -1,0 +1,128 @@
+body {
+    background: white;
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+
+a:hover {
+    color: chocolate;
+}
+
+/**************/
+/*HEADER ALLES*/
+/**************/
+body > header {
+    top: 0;
+    z-index: 100;
+    left: 0;
+    right: 0;
+}
+
+/***********/
+/*NAVIGATIE*/
+/***********/
+body > header > nav {
+    background-color: darkolivegreen;
+    color: white;
+}
+
+body > header > nav > ul {
+    list-style: none;
+    display: flex;
+    align-items:center;
+    flex-wrap:wrap;
+    margin: 0em; padding:0;
+}
+
+body > header > nav > ul li {
+    width:50%;
+}
+
+body > header > nav > ul li.logo {
+    width:100%;
+}
+
+body > header > nav > ul a {
+    line-height:1.5rem;
+    padding: .5em;
+    display: block;
+    color: white;
+    text-align:center;
+    text-decoration: none;
+}
+
+.logo a {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+
+/***************/
+/*MEDIA QUERIES*/
+/***************/
+@media (min-width:30em) {
+    body > header > nav > ul li {
+        width:25%;
+    }
+    .logo a {
+        font-size: 1.75em;
+    }
+}
+
+@media (min-width:40em) {
+    body {
+        padding-top: 4em;
+    }
+    body > header {
+        position: fixed;
+        top: 0;
+        z-index: 100;
+        left: 0;
+        right: 0;
+    }
+    
+    body > header > nav > ul li {
+        width:auto;
+    }
+    body > header > nav > ul li.logo {
+        width:auto;
+    }
+    .logo a {
+        font-size: 2em;
+    }
+    body > header > nav > ul a {
+        line-height:2rem;
+    }
+}
+
+/******************************/
+/*MAIN, ZIE ANDERE STYLESHEETS*/
+/******************************/
+
+
+
+
+/***************/
+/*FOOTERS ALLES*/
+/***************/
+/*
+footer {
+    background-color: darkolivegreen;
+    color: white;
+    display: grid; 
+}
+
+footer > section > h1 {
+    font-size: .80em;
+    padding: 0px 0px 0px 5px;
+    margin: 5px 0px 0px 0px;
+}
+
+footer > section > ul {
+    list-style: none;
+    font-size: 0.80em
+}
+
+footer > section > ul {
+    padding: 0px 0px 0px 5px;
+}*/
