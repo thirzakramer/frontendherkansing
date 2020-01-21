@@ -1,6 +1,6 @@
 /*jslint browser: true, devel: true, eqeq: true, plusplus: true, sloppy: true, vars: true, white: true*/
 /*eslint-env browser*/
-/*eslint 'no-console': 0*/         /*bron: veerle beeker*/
+/*eslint 'no-console': 0*/         /*bron: Veerle Beeker*/
 
 var knop = document.querySelector("button");
 var bedankt = document.querySelector(".bedankt");
@@ -27,4 +27,5 @@ knop.addEventListener('click', click);
 /**************/
 /*
 https://developer.mozilla.org/en-US/docs/Web/API/Element/classList
+Damian Veldkamp, leerling leerjaar 3
 */
